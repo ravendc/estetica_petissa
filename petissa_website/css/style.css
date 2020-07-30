@@ -1,0 +1,294 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+#info{
+	background-color: #006266;
+	color: whitesmoke;
+	padding: 15px 0;
+}
+#info a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+#info a:hover{
+  color: #f9ca24;
+  cursor: pointer;
+}
+#sunday_special{
+  color: white;
+  background-color: #6F1E51;
+  padding: 10px;
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+}
+#sunday_special .special_bounce{
+  animation: bounce 3s infinite;
+}
+#navegacion{
+	background-color: #0a3d62;
+}
+#menu{
+	padding-top: 25px;
+	margin-bottom: 0;
+}
+#menu li a{
+	color: #1abc9c;
+	font-size: 1.7rem;
+	font-weight: bolder;
+}
+#menu li a:hover{
+	color: whitesmoke;
+	text-decoration: none;
+}
+#logo .petissa_logo{
+	color: whitesmoke;
+	text-decoration: none;
+	font-family: 'Pacifico', cursive;
+	font-size: 2.5rem;
+}
+#logo .petissa_logo div{
+  display: inline;
+}
+/*-----------------------------Menu responsivo---------------------------------------------------*/
+#toggle {
+      position: absolute;
+      right: 20px;
+      top: 14px;
+      z-index: 999;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      float: right;
+      transition: all 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;
+}
+
+#toggle .span {
+      height: 3px;
+      background: #fff;
+      transition: all 0.3s ease-out;
+      backface-visibility: hidden;
+      margin: 5px auto;
+}
+
+#toggle.on #one {
+      transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+#toggle.on #two {
+      opacity: 0;
+}
+
+#toggle.on #three {
+      transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+#resize {
+      z-index: 1;
+      top: 0px;
+      position: absolute;
+      background: #34495e;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-out;
+      display: table;
+}
+#resize.active {
+      visibility: visible;
+      opacity: 0.95;
+      display: block;
+      width: 113%;
+}
+#resize li:nth-child(1) {
+      margin-top:140px;
+}
+#menu_mobile li {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+}
+#menu_mobile li a{
+  color: #1abc9c;
+  font-weight: 300;
+  font-size: 25px;
+  display: block;
+  font-family: 'Kanit', sans-serif;
+}
+#menu_mobile li a:hover{
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+.baner {
+	  padding-top: 250px; padding-bottom: 100px;
+      background: url(../img/hair_cut.jpg) no-repeat center;
+      background-size: cover;
+      background-attachment: fixed !important;
+}
+.titulares{
+   	 color: whitesmoke; 
+   	 text-shadow: 3px 2px black ; 
+}
+.titulares h1{
+	font-size: 9rem;
+	letter-spacing: 5px;
+	font-family: 'Pacifico', cursive;
+}
+.titulares h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-shadow: 2px 2px black ;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.principal_paragraph h4{
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 3px 2px #22a6b3 ;
+}
+.principal_paragraph p{
+ font-size: 2rem;
+ margin: 1.5rem;
+}
+#quality_target{
+    background: #0a3d62;   
+}
+#quality_target .description{
+  display: flex;
+      padding: 10px;
+}
+#quality_target .description h5{
+    font-size: 3rem;
+    color: #f7f1e3;
+    text-shadow: 3px 2px #16a085 ;
+    font-family: 'Pacifico', cursive;
+}
+#quality_target .description p{
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.7rem;
+  color: #f7f1e3;
+}
+.sello{
+    background-color: #16a085;
+    width: 9em;
+    height: 10em;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.sello .sello_ico {
+    position: relative;
+    top: 15%;
+    left: 10%;
+}
+#social_media{
+  background-color: #0a3d62;
+}
+#social_media p{
+    color: whitesmoke;
+    font-size: 2.5rem;
+    font-family: 'Pacifico', cursive;
+}
+#separador{
+  background-color: #0a3d62;
+  font-size: 3.5rem;
+  padding: 2rem;
+  font-family: 'Pacifico', cursive;
+  color: #dfe6e9;
+  text-shadow: 3px 2px #d63031 ;
+}
+.gallery_img{
+  height: 250px;
+  object-fit: contain; 
+}
+
+.listauno{
+    list-style: circle;
+    font-size: 2rem;}
+.listauno_op{
+    font-weight: bolder;
+    color: #195b8b;
+    font-family: 'Pacifico', cursive;
+}
+/*----------------------------Media Queries----------------------------------------------*/
+@media (max-width: 480px){
+#logo .petissa_logo div {
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-size: 
+	}
+#logo .petissa_logo img {
+    position: relative;
+    left: 30%;
+	}
+#quality_target .description{
+  display: block;
+}
+.sello{
+    position: relative;
+    left: 30%;
+}
+}
+
+@media only screen and (max-width: 480px) and (min-width: 250px){
+.gallery_img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover; 
+  } 
+}
+@media (max-width: 994px){
+.baner {
+	  padding-top: 250px; padding-bottom: 100px;
+      background: url(../img/bath_dog.jpg) no-repeat center top;
+      background-size: cover;
+      background-attachment: scroll !important;
+}
+#logo{
+  margin-right: 3rem;
+}
+#toggle {
+    visibility: visible;
+    opacity: 1;
+    }
+#menu li a{
+  display: none;
+}
+  }
+
+@media (min-width: 995px){
+ #resize {
+      visibility: hidden !important;
+      }
+ }
+
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
